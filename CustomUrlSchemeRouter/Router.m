@@ -33,8 +33,8 @@
         Route *route = [_routes objectAtIndex:i];
         if ([route matchesUrl:url])
         {
-
-            break;
+            [self routeUrl:url withRoute:route];
+            return YES;
         }
     }
     return NO;
@@ -54,7 +54,7 @@
             }
             else
             {
-                [NSException raise:NSInvalidArgumentException format:@"adapter class name does not specify a class that implements 'RouterAdapterProtocol'"];
+                [NSException raise:NSInvalidArgumentException format:@"adapter class name '%@' does not specify a class that implements 'RouterAdapterProtocol'", route.adapterClassName];
             }
         }
         @catch (NSException *ex)

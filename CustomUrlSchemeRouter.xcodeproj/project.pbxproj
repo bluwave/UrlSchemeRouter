@@ -26,7 +26,7 @@
 		3BD1AAC8164B386C0075E4F0 /* RoutingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1AAC7164B386C0075E4F0 /* RoutingTests.m */; };
 		3BD1AAD6164C4BD50075E4F0 /* RouteCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1AAD5164C4BD50075E4F0 /* RouteCViewController.m */; };
 		3BD1AADA164C4BE20075E4F0 /* RouteBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1AAD9164C4BE20075E4F0 /* RouteBViewController.m */; };
-		3BD1AADD164C4BF70075E4F0 /* RouteAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1AADC164C4BF70075E4F0 /* RouteAViewController.m */; };
+		4B1416A174DE0B0DCEAD84F7 /* RouteAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B141CE264D6D10E63FF4EC4 /* RouteAViewController.m */; };
 		4B1416C6AE00C0614304A29F /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1412ED0312D445922C7BC2 /* Router.m */; };
 		4B1417017F175E9BF69D7345 /* RouteAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1416D029083AF5127B3480 /* RouteAdapter.m */; };
 		4B141F29458A4D0F39D47620 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B141FA81AB9D81504E7B074 /* Route.m */; };
@@ -71,12 +71,12 @@
 		3BD1AAD5164C4BD50075E4F0 /* RouteCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteCViewController.m; sourceTree = "<group>"; };
 		3BD1AAD8164C4BE20075E4F0 /* RouteBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteBViewController.h; sourceTree = "<group>"; };
 		3BD1AAD9164C4BE20075E4F0 /* RouteBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteBViewController.m; sourceTree = "<group>"; };
-		3BD1AADB164C4BF70075E4F0 /* RouteAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteAViewController.h; sourceTree = "<group>"; };
-		3BD1AADC164C4BF70075E4F0 /* RouteAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteAViewController.m; sourceTree = "<group>"; };
+		4B1410CEEFB60D42D445BB4E /* RouteAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteAViewController.h; sourceTree = "<group>"; };
 		4B1411EFC706478050ED6CE7 /* RouteAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteAdapter.h; sourceTree = "<group>"; };
 		4B1412ED0312D445922C7BC2 /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
 		4B141681C50B7F68C86F4FBA /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
 		4B1416D029083AF5127B3480 /* RouteAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteAdapter.m; sourceTree = "<group>"; };
+		4B141CE264D6D10E63FF4EC4 /* RouteAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteAViewController.m; sourceTree = "<group>"; };
 		4B141F493973AF587B464493 /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		4B141FA81AB9D81504E7B074 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,8 +108,6 @@
 		3B9BC3A0164B27F8003FA237 = {
 			isa = PBXGroup;
 			children = (
-				3BD1AADB164C4BF70075E4F0 /* RouteAViewController.h */,
-				3BD1AADC164C4BF70075E4F0 /* RouteAViewController.m */,
 				3B9BC3B5164B27F8003FA237 /* CustomUrlSchemeRouter */,
 				3BD1AAC0164B386C0075E4F0 /* RoutingTests */,
 				3B9BC3AE164B27F8003FA237 /* Frameworks */,
@@ -157,6 +155,8 @@
 				3BD1AAD5164C4BD50075E4F0 /* RouteCViewController.m */,
 				3BD1AAD8164C4BE20075E4F0 /* RouteBViewController.h */,
 				3BD1AAD9164C4BE20075E4F0 /* RouteBViewController.m */,
+				4B1410CEEFB60D42D445BB4E /* RouteAViewController.h */,
+				4B141CE264D6D10E63FF4EC4 /* RouteAViewController.m */,
 			);
 			path = CustomUrlSchemeRouter;
 			sourceTree = "<group>";
@@ -313,7 +313,7 @@
 				4B1417017F175E9BF69D7345 /* RouteAdapter.m in Sources */,
 				3BD1AAD6164C4BD50075E4F0 /* RouteCViewController.m in Sources */,
 				3BD1AADA164C4BE20075E4F0 /* RouteBViewController.m in Sources */,
-				3BD1AADD164C4BF70075E4F0 /* RouteAViewController.m in Sources */,
+				4B1416A174DE0B0DCEAD84F7 /* RouteAViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

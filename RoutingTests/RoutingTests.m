@@ -10,13 +10,15 @@
 #import "Route.h"
 #import "Router.h"
 
+
+
 @implementation RoutingTests
 
 - (void)setUp
 {
     [super setUp];
-    
-    // Set-up code here.
+
+
 }
 
 - (void)tearDown
@@ -36,7 +38,7 @@
 
 -(void) testRouteRegex
 {
-    Route * r = [[Route alloc] initWithRegex:@"^foo://(actionA)" adapterClassName:nil destinationViewControllerName:nil];
+    Route * r = [[Route alloc] initWithRegex:@"^foo://(actionA)" adapterClassName:nil routingHandler:nil];
 
     NSURL * testUrl = [NSURL URLWithString:@"foobar://actionA?query=foobar"];
     STAssertFalse([r matchesUrl:testUrl], @"testUrl should not match regex: %@ != %@", r.regex, [testUrl absoluteString]);
@@ -59,5 +61,31 @@
     STAssertTrue([r matchesUrl:testUrl], @"testUrl should match regex: %@ != %@", r.regex, [testUrl absoluteString]);
 
 }
+
+-(void) testRouter
+{
+    dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+
+
+    Route * r = [[Route alloc] initWithRegex:@"^foo://(actionA)" adapterClassName:@"RouteAdapter" routingHandler:^(NSURL * url_ , id params)
+    {
+        STAssertNotNil(params, @"params nil");
+        STAssertEqualObjects( [params objectAtIndex:0],@"query=foobar",nil);
+        dispatch_semaphore_signal(sema);
+    }];
+
+    NSURL * testUrl = [NSURL URLWithString:@"foo://actionA?query=foobar"];
+
+    Router *router = [Router new];
+
+    [router.routes addObject:r];
+
+    [router openUrl:testUrl];
+
+    dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+
+}
+
+
 
 @end

@@ -6,7 +6,7 @@
 
 
 #import <Foundation/Foundation.h>
-
+#import "Route.h"
 
 @protocol RouterAdapterProtocol <NSObject>
 -(id)adaptUrl:(NSURL *) url forRoute:(Route *) route;

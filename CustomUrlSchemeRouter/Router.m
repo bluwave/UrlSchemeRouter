@@ -9,6 +9,7 @@
 #import "Route.h"
 
 
+
 @implementation Router
 
 
@@ -32,10 +33,40 @@
         Route *route = [_routes objectAtIndex:i];
         if ([route matchesUrl:url])
         {
+
             break;
         }
     }
     return NO;
+}
+
+-(void) routeUrl:(NSURL *)url withRoute:(Route *) route
+{
+    id params = nil;
+    if(route.adapterClassName)
+    {
+        @try
+        {
+            id adapter = [[NSClassFromString(route.adapterClassName) alloc] init];
+            if (adapter && [adapter respondsToSelector:@selector(adaptUrl:forRoute:)])
+            {
+                params = [adapter adaptUrl:url forRoute:route];
+            }
+            else
+            {
+                [NSException raise:NSInvalidArgumentException format:@"adapter class name does not specify a class that implements 'RouterAdapterProtocol'"];
+            }
+        }
+        @catch (NSException *ex)
+        {
+            NSLog(@"%s ** Routing adapter exception: %@", __func__, [ex description]);
+        }
+    }
+
+    if (route.routingHandler)
+    {
+        route.routingHandler(url, params);
+    }
 }
 
 

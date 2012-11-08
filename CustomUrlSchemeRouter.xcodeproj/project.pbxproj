@@ -19,9 +19,28 @@
 		3B9BC3C9164B27F8003FA237 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BC3C8164B27F8003FA237 /* ViewController.m */; };
 		3B9BC3CC164B27F8003FA237 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9BC3CA164B27F8003FA237 /* ViewController_iPhone.xib */; };
 		3B9BC3CF164B27F8003FA237 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9BC3CD164B27F8003FA237 /* ViewController_iPad.xib */; };
+		3BD1AABD164B386C0075E4F0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BD1AABC164B386C0075E4F0 /* SenTestingKit.framework */; };
+		3BD1AABE164B386C0075E4F0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9BC3AF164B27F8003FA237 /* UIKit.framework */; };
+		3BD1AABF164B386C0075E4F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9BC3B1164B27F8003FA237 /* Foundation.framework */; };
+		3BD1AAC5164B386C0075E4F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3BD1AAC3164B386C0075E4F0 /* InfoPlist.strings */; };
+		3BD1AAC8164B386C0075E4F0 /* RoutingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1AAC7164B386C0075E4F0 /* RoutingTests.m */; };
+		3BD1AAD6164C4BD50075E4F0 /* RouteCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1AAD5164C4BD50075E4F0 /* RouteCViewController.m */; };
+		3BD1AADA164C4BE20075E4F0 /* RouteBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1AAD9164C4BE20075E4F0 /* RouteBViewController.m */; };
+		3BD1AADD164C4BF70075E4F0 /* RouteAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1AADC164C4BF70075E4F0 /* RouteAViewController.m */; };
 		4B1416C6AE00C0614304A29F /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1412ED0312D445922C7BC2 /* Router.m */; };
+		4B1417017F175E9BF69D7345 /* RouteAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1416D029083AF5127B3480 /* RouteAdapter.m */; };
 		4B141F29458A4D0F39D47620 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B141FA81AB9D81504E7B074 /* Route.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3BD1AACE164C2D490075E4F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3B9BC3A2164B27F8003FA237 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B9BC3AA164B27F8003FA237;
+			remoteInfo = CustomUrlSchemeRouter;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3B9BC3AB164B27F8003FA237 /* CustomUrlSchemeRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomUrlSchemeRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,8 +60,23 @@
 		3B9BC3C8164B27F8003FA237 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3B9BC3CB164B27F8003FA237 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		3B9BC3CE164B27F8003FA237 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		3BD1AABB164B386C0075E4F0 /* RoutingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoutingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BD1AABC164B386C0075E4F0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3BD1AAC2164B386C0075E4F0 /* RoutingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoutingTests-Info.plist"; sourceTree = "<group>"; };
+		3BD1AAC4164B386C0075E4F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3BD1AAC6164B386C0075E4F0 /* RoutingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoutingTests.h; sourceTree = "<group>"; };
+		3BD1AAC7164B386C0075E4F0 /* RoutingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoutingTests.m; sourceTree = "<group>"; };
+		3BD1AAC9164B386C0075E4F0 /* RoutingTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RoutingTests-Prefix.pch"; sourceTree = "<group>"; };
+		3BD1AAD4164C4BD50075E4F0 /* RouteCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteCViewController.h; sourceTree = "<group>"; };
+		3BD1AAD5164C4BD50075E4F0 /* RouteCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteCViewController.m; sourceTree = "<group>"; };
+		3BD1AAD8164C4BE20075E4F0 /* RouteBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteBViewController.h; sourceTree = "<group>"; };
+		3BD1AAD9164C4BE20075E4F0 /* RouteBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteBViewController.m; sourceTree = "<group>"; };
+		3BD1AADB164C4BF70075E4F0 /* RouteAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteAViewController.h; sourceTree = "<group>"; };
+		3BD1AADC164C4BF70075E4F0 /* RouteAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteAViewController.m; sourceTree = "<group>"; };
+		4B1411EFC706478050ED6CE7 /* RouteAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteAdapter.h; sourceTree = "<group>"; };
 		4B1412ED0312D445922C7BC2 /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
 		4B141681C50B7F68C86F4FBA /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		4B1416D029083AF5127B3480 /* RouteAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteAdapter.m; sourceTree = "<group>"; };
 		4B141F493973AF587B464493 /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		4B141FA81AB9D81504E7B074 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,13 +92,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BD1AAB7164B386C0075E4F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BD1AABD164B386C0075E4F0 /* SenTestingKit.framework in Frameworks */,
+				3BD1AABE164B386C0075E4F0 /* UIKit.framework in Frameworks */,
+				3BD1AABF164B386C0075E4F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3B9BC3A0164B27F8003FA237 = {
 			isa = PBXGroup;
 			children = (
+				3BD1AADB164C4BF70075E4F0 /* RouteAViewController.h */,
+				3BD1AADC164C4BF70075E4F0 /* RouteAViewController.m */,
 				3B9BC3B5164B27F8003FA237 /* CustomUrlSchemeRouter */,
+				3BD1AAC0164B386C0075E4F0 /* RoutingTests */,
 				3B9BC3AE164B27F8003FA237 /* Frameworks */,
 				3B9BC3AC164B27F8003FA237 /* Products */,
 			);
@@ -74,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				3B9BC3AB164B27F8003FA237 /* CustomUrlSchemeRouter.app */,
+				3BD1AABB164B386C0075E4F0 /* RoutingTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,6 +132,7 @@
 				3B9BC3AF164B27F8003FA237 /* UIKit.framework */,
 				3B9BC3B1164B27F8003FA237 /* Foundation.framework */,
 				3B9BC3B3164B27F8003FA237 /* CoreGraphics.framework */,
+				3BD1AABC164B386C0075E4F0 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,6 +151,12 @@
 				4B141681C50B7F68C86F4FBA /* Route.h */,
 				4B1412ED0312D445922C7BC2 /* Router.m */,
 				4B141F493973AF587B464493 /* Router.h */,
+				4B1416D029083AF5127B3480 /* RouteAdapter.m */,
+				4B1411EFC706478050ED6CE7 /* RouteAdapter.h */,
+				3BD1AAD4164C4BD50075E4F0 /* RouteCViewController.h */,
+				3BD1AAD5164C4BD50075E4F0 /* RouteCViewController.m */,
+				3BD1AAD8164C4BE20075E4F0 /* RouteBViewController.h */,
+				3BD1AAD9164C4BE20075E4F0 /* RouteBViewController.m */,
 			);
 			path = CustomUrlSchemeRouter;
 			sourceTree = "<group>";
@@ -116,6 +171,26 @@
 				3B9BC3C1164B27F8003FA237 /* Default.png */,
 				3B9BC3C3164B27F8003FA237 /* Default@2x.png */,
 				3B9BC3C5164B27F8003FA237 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BD1AAC0164B386C0075E4F0 /* RoutingTests */ = {
+			isa = PBXGroup;
+			children = (
+				3BD1AAC6164B386C0075E4F0 /* RoutingTests.h */,
+				3BD1AAC7164B386C0075E4F0 /* RoutingTests.m */,
+				3BD1AAC1164B386C0075E4F0 /* Supporting Files */,
+			);
+			path = RoutingTests;
+			sourceTree = "<group>";
+		};
+		3BD1AAC1164B386C0075E4F0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3BD1AAC2164B386C0075E4F0 /* RoutingTests-Info.plist */,
+				3BD1AAC3164B386C0075E4F0 /* InfoPlist.strings */,
+				3BD1AAC9164B386C0075E4F0 /* RoutingTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +215,25 @@
 			productReference = 3B9BC3AB164B27F8003FA237 /* CustomUrlSchemeRouter.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3BD1AABA164B386C0075E4F0 /* RoutingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BD1AACC164B386C0075E4F0 /* Build configuration list for PBXNativeTarget "RoutingTests" */;
+			buildPhases = (
+				3BD1AAB6164B386C0075E4F0 /* Sources */,
+				3BD1AAB7164B386C0075E4F0 /* Frameworks */,
+				3BD1AAB8164B386C0075E4F0 /* Resources */,
+				3BD1AAB9164B386C0075E4F0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BD1AACF164C2D490075E4F0 /* PBXTargetDependency */,
+			);
+			name = RoutingTests;
+			productName = RoutingTests;
+			productReference = 3BD1AABB164B386C0075E4F0 /* RoutingTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,6 +255,7 @@
 			projectRoot = "";
 			targets = (
 				3B9BC3AA164B27F8003FA237 /* CustomUrlSchemeRouter */,
+				3BD1AABA164B386C0075E4F0 /* RoutingTests */,
 			);
 		};
 /* End PBXProject section */
@@ -179,7 +274,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BD1AAB8164B386C0075E4F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BD1AAC5164B386C0075E4F0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BD1AAB9164B386C0075E4F0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B9BC3A7164B27F8003FA237 /* Sources */ = {
@@ -191,10 +310,30 @@
 				3B9BC3C9164B27F8003FA237 /* ViewController.m in Sources */,
 				4B141F29458A4D0F39D47620 /* Route.m in Sources */,
 				4B1416C6AE00C0614304A29F /* Router.m in Sources */,
+				4B1417017F175E9BF69D7345 /* RouteAdapter.m in Sources */,
+				3BD1AAD6164C4BD50075E4F0 /* RouteCViewController.m in Sources */,
+				3BD1AADA164C4BE20075E4F0 /* RouteBViewController.m in Sources */,
+				3BD1AADD164C4BF70075E4F0 /* RouteAViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BD1AAB6164B386C0075E4F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BD1AAC8164B386C0075E4F0 /* RoutingTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3BD1AACF164C2D490075E4F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3B9BC3AA164B27F8003FA237 /* CustomUrlSchemeRouter */;
+			targetProxy = 3BD1AACE164C2D490075E4F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3B9BC3B8164B27F8003FA237 /* InfoPlist.strings */ = {
@@ -219,6 +358,14 @@
 				3B9BC3CE164B27F8003FA237 /* en */,
 			);
 			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		3BD1AAC3164B386C0075E4F0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3BD1AAC4164B386C0075E4F0 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -298,6 +445,40 @@
 			};
 			name = Release;
 		};
+		3BD1AACA164B386C0075E4F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CustomUrlSchemeRouter.app/CustomUrlSchemeRouter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoutingTests/RoutingTests-Prefix.pch";
+				INFOPLIST_FILE = "RoutingTests/RoutingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3BD1AACB164B386C0075E4F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CustomUrlSchemeRouter.app/CustomUrlSchemeRouter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoutingTests/RoutingTests-Prefix.pch";
+				INFOPLIST_FILE = "RoutingTests/RoutingTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +498,16 @@
 				3B9BC3D4164B27F8003FA237 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BD1AACC164B386C0075E4F0 /* Build configuration list for PBXNativeTarget "RoutingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BD1AACA164B386C0075E4F0 /* Debug */,
+				3BD1AACB164B386C0075E4F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

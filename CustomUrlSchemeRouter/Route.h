@@ -10,15 +10,15 @@
 
 @interface Route : NSObject
 
+
 @property(nonatomic, strong) NSString *regex;
-@property(nonatomic, strong) NSMutableArray * adapters;
-@property(nonatomic, strong) NSString *destinationViewControllerName;
+@property(nonatomic, strong) NSString *adapterClassName;
 
-- (id)initWithRegex:(NSString *)regex adapterClassName:(NSString *)adapterClassName destinationViewControllerName:(NSString *)destinationViewControllerName;
+@property(nonatomic, copy) void(^routingHandler)(NSURL *url, id adapterResult);
 
-- (id)initWithRegex:(NSString *)regex adapters:(NSArray *)adapters destinationViewControllerName:(NSString *)destinationViewControllerName;
+- (id)initWithRegex:(NSString *)regex adapterClassName:(NSString *)adapterClassName routingHandler:(void (^)(NSURL *, id))routingHandler;
 
-+ (id)routeWithRegex:(NSString *)regex adapterClassName:(NSString *)adapterClassName destinationViewControllerName:(NSString *)destinationViewControllerName;
++ (id)objectWithRegex:(NSString *)regex adapterClassName:(NSString *)adapterClassName routingHandler:(void (^)(NSURL *, id))routingHandler;
 
 -(BOOL) matchesUrl:(NSURL *) url;
 

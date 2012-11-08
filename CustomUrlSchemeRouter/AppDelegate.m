@@ -71,8 +71,22 @@
 
 -(void) setupRoutes
 {
-    Route * routeA = [Route routeWithRegex:@"" adapterClassName:@"" destinationViewControllerName:@""];
+//    foo://actionA?srch=foobar
+    Route * routeA = [Route objectWithRegex:@"foo://(actionA)" adapterClassName:nil routingHandler:nil];
+    Route * routeB = [Route objectWithRegex:@"foo://(actionB)" adapterClassName:nil routingHandler:nil];
+    Route * routeC = [Route objectWithRegex:@"foo://(actionC)" adapterClassName:@"RouteAdapter" routingHandler:^(NSURL * url, id params){
+        NSLog(@"%s parsed params from adapter: %@",__func__, params);
+
+        [[[UIAlertView alloc] initWithTitle:@"route c chosen" message:@"" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    }];
+
     [_urlSchemeRouter.routes addObject:routeA];
+
+    [_urlSchemeRouter.routes addObject:routeB];
+
+    [_urlSchemeRouter.routes addObject:routeC];
 }
+
+
 
 @end

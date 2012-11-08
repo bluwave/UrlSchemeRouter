@@ -8,8 +8,11 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Router : NSObject
+@protocol RouterAdapterProtocol <NSObject>
+-(id)adaptUrl:(NSURL *) url forRoute:(Route *) route;
+@end
 
+@interface Router : NSObject
 
 @property(nonatomic, strong) NSMutableArray * routes;
 

@@ -7,46 +7,52 @@
 
 #import "Route.h"
 
+@interface Route()
+@end
+
 
 @implementation Route
 
-- (id)initWithRegex:(NSString *)regex adapterClassName:(NSString *)adapterClassName destinationViewControllerName:(NSString *)destinationViewControllerName
+- (id)initWithRegex:(NSString *)regex adapterClassName:(NSString *)adapterClassName routingHandler:(void (^)(NSURL *, id))routingHandler
 {
     self = [super init];
     if (self)
     {
         _regex = regex;
-        _adapters = [[NSMutableArray alloc] init];
-        [_adapters addObject:adapterClassName];
-        _destinationViewControllerName = destinationViewControllerName;
+        _adapterClassName = adapterClassName;
+        self.routingHandler = routingHandler;
     }
 
     return self;
 }
 
-
-- (id)initWithRegex:(NSString *)regex adapters:(NSArray *)adapters destinationViewControllerName:(NSString *)destinationViewControllerName
++ (id)objectWithRegex:(NSString *)regex adapterClassName:(NSString *)adapterClassName routingHandler:(void (^)(NSURL *, id))routingHandler
 {
-    self = [super init];
-    if (self)
-    {
-        _regex = regex;
-        _adapters = [[NSMutableArray alloc] initWithArray:adapters];
-        _destinationViewControllerName = destinationViewControllerName;
-    }
-
-    return self;
+    return [[Route alloc] initWithRegex:regex adapterClassName:adapterClassName routingHandler:routingHandler];
 }
 
-
-+ (id)routeWithRegex:(NSString *)regex adapterClassName:(NSString *)adapterClassName destinationViewControllerName:(NSString *)destinationViewControllerName
+-(BOOL) matchesUrl:(NSURL *) url_;
 {
-    return [[Route alloc] initWithRegex:regex adapterClassName:adapterClassName destinationViewControllerName:destinationViewControllerName];
-}
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:_regex options:NSRegularExpressionCaseInsensitive error:nil];
 
--(BOOL) matchesUrl:(NSURL *) url;
-{
-    return NO;
+    NSString * url  = [url_ absoluteString];
+
+    NSRange range = NSMakeRange(0, [url length]);
+
+    int matches = [regex numberOfMatchesInString:url options:0 range:range];
+
+//    [regex enumerateMatchesInString:url options:0 range:range usingBlock:^(NSTextCheckingResult *result, NSMatchingFlags flags, BOOL *stop)
+//    {
+//        for(int i = 1; i < [result numberOfRanges]; i++)
+//        {
+//
+//            NSString *match = [url substringWithRange:[result rangeAtIndex:i]];
+//            NSLog(@"%s %d) %@",__func__, i, match);
+//
+//        }
+//    }];
+
+    return matches > 0;
 }
 
 

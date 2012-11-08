@@ -16,7 +16,7 @@
 
 - (id)initWithRegex:(NSString *)regex adapterClassName:(NSString *)adapterClassName destinationViewControllerName:(NSString *)destinationViewControllerName;
 
-- (id)initWithRegex:(NSString *)regex adapters:(NSArray *)adapters destinationViewControllerName:(NSString *)destinationViewControllerName
+- (id)initWithRegex:(NSString *)regex adapters:(NSArray *)adapters destinationViewControllerName:(NSString *)destinationViewControllerName;
 
 + (id)routeWithRegex:(NSString *)regex adapterClassName:(NSString *)adapterClassName destinationViewControllerName:(NSString *)destinationViewControllerName;
 

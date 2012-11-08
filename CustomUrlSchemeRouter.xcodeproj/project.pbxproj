@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B9BC3B0164B27F8003FA237 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9BC3AF164B27F8003FA237 /* UIKit.framework */; };
+		3B9BC3B2164B27F8003FA237 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9BC3B1164B27F8003FA237 /* Foundation.framework */; };
+		3B9BC3B4164B27F8003FA237 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9BC3B3164B27F8003FA237 /* CoreGraphics.framework */; };
+		3B9BC3BA164B27F8003FA237 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B9BC3B8164B27F8003FA237 /* InfoPlist.strings */; };
+		3B9BC3BC164B27F8003FA237 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BC3BB164B27F8003FA237 /* main.m */; };
+		3B9BC3C0164B27F8003FA237 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BC3BF164B27F8003FA237 /* AppDelegate.m */; };
+		3B9BC3C2164B27F8003FA237 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9BC3C1164B27F8003FA237 /* Default.png */; };
+		3B9BC3C4164B27F8003FA237 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9BC3C3164B27F8003FA237 /* Default@2x.png */; };
+		3B9BC3C6164B27F8003FA237 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9BC3C5164B27F8003FA237 /* Default-568h@2x.png */; };
+		3B9BC3C9164B27F8003FA237 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9BC3C8164B27F8003FA237 /* ViewController.m */; };
+		3B9BC3CC164B27F8003FA237 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9BC3CA164B27F8003FA237 /* ViewController_iPhone.xib */; };
+		3B9BC3CF164B27F8003FA237 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B9BC3CD164B27F8003FA237 /* ViewController_iPad.xib */; };
+		4B1416C6AE00C0614304A29F /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1412ED0312D445922C7BC2 /* Router.m */; };
+		4B141F29458A4D0F39D47620 /* Route.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B141FA81AB9D81504E7B074 /* Route.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B9BC3AB164B27F8003FA237 /* CustomUrlSchemeRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomUrlSchemeRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B9BC3AF164B27F8003FA237 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3B9BC3B1164B27F8003FA237 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3B9BC3B3164B27F8003FA237 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3B9BC3B7164B27F8003FA237 /* CustomUrlSchemeRouter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CustomUrlSchemeRouter-Info.plist"; sourceTree = "<group>"; };
+		3B9BC3B9164B27F8003FA237 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3B9BC3BB164B27F8003FA237 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B9BC3BD164B27F8003FA237 /* CustomUrlSchemeRouter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomUrlSchemeRouter-Prefix.pch"; sourceTree = "<group>"; };
+		3B9BC3BE164B27F8003FA237 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3B9BC3BF164B27F8003FA237 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3B9BC3C1164B27F8003FA237 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3B9BC3C3164B27F8003FA237 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3B9BC3C5164B27F8003FA237 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3B9BC3C7164B27F8003FA237 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3B9BC3C8164B27F8003FA237 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3B9BC3CB164B27F8003FA237 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		3B9BC3CE164B27F8003FA237 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		4B1412ED0312D445922C7BC2 /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
+		4B141681C50B7F68C86F4FBA /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		4B141F493973AF587B464493 /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		4B141FA81AB9D81504E7B074 /* Route.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Route.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B9BC3A8164B27F8003FA237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9BC3B0164B27F8003FA237 /* UIKit.framework in Frameworks */,
+				3B9BC3B2164B27F8003FA237 /* Foundation.framework in Frameworks */,
+				3B9BC3B4164B27F8003FA237 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B9BC3A0164B27F8003FA237 = {
+			isa = PBXGroup;
+			children = (
+				3B9BC3B5164B27F8003FA237 /* CustomUrlSchemeRouter */,
+				3B9BC3AE164B27F8003FA237 /* Frameworks */,
+				3B9BC3AC164B27F8003FA237 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B9BC3AC164B27F8003FA237 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B9BC3AB164B27F8003FA237 /* CustomUrlSchemeRouter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B9BC3AE164B27F8003FA237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B9BC3AF164B27F8003FA237 /* UIKit.framework */,
+				3B9BC3B1164B27F8003FA237 /* Foundation.framework */,
+				3B9BC3B3164B27F8003FA237 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B9BC3B5164B27F8003FA237 /* CustomUrlSchemeRouter */ = {
+			isa = PBXGroup;
+			children = (
+				3B9BC3BE164B27F8003FA237 /* AppDelegate.h */,
+				3B9BC3BF164B27F8003FA237 /* AppDelegate.m */,
+				3B9BC3C7164B27F8003FA237 /* ViewController.h */,
+				3B9BC3C8164B27F8003FA237 /* ViewController.m */,
+				3B9BC3CA164B27F8003FA237 /* ViewController_iPhone.xib */,
+				3B9BC3CD164B27F8003FA237 /* ViewController_iPad.xib */,
+				3B9BC3B6164B27F8003FA237 /* Supporting Files */,
+				4B141FA81AB9D81504E7B074 /* Route.m */,
+				4B141681C50B7F68C86F4FBA /* Route.h */,
+				4B1412ED0312D445922C7BC2 /* Router.m */,
+				4B141F493973AF587B464493 /* Router.h */,
+			);
+			path = CustomUrlSchemeRouter;
+			sourceTree = "<group>";
+		};
+		3B9BC3B6164B27F8003FA237 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B9BC3B7164B27F8003FA237 /* CustomUrlSchemeRouter-Info.plist */,
+				3B9BC3B8164B27F8003FA237 /* InfoPlist.strings */,
+				3B9BC3BB164B27F8003FA237 /* main.m */,
+				3B9BC3BD164B27F8003FA237 /* CustomUrlSchemeRouter-Prefix.pch */,
+				3B9BC3C1164B27F8003FA237 /* Default.png */,
+				3B9BC3C3164B27F8003FA237 /* Default@2x.png */,
+				3B9BC3C5164B27F8003FA237 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B9BC3AA164B27F8003FA237 /* CustomUrlSchemeRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B9BC3D2164B27F8003FA237 /* Build configuration list for PBXNativeTarget "CustomUrlSchemeRouter" */;
+			buildPhases = (
+				3B9BC3A7164B27F8003FA237 /* Sources */,
+				3B9BC3A8164B27F8003FA237 /* Frameworks */,
+				3B9BC3A9164B27F8003FA237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomUrlSchemeRouter;
+			productName = CustomUrlSchemeRouter;
+			productReference = 3B9BC3AB164B27F8003FA237 /* CustomUrlSchemeRouter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B9BC3A2164B27F8003FA237 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
+			buildConfigurationList = 3B9BC3A5164B27F8003FA237 /* Build configuration list for PBXProject "CustomUrlSchemeRouter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3B9BC3A0164B27F8003FA237;
+			productRefGroup = 3B9BC3AC164B27F8003FA237 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B9BC3AA164B27F8003FA237 /* CustomUrlSchemeRouter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B9BC3A9164B27F8003FA237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9BC3BA164B27F8003FA237 /* InfoPlist.strings in Resources */,
+				3B9BC3C2164B27F8003FA237 /* Default.png in Resources */,
+				3B9BC3C4164B27F8003FA237 /* Default@2x.png in Resources */,
+				3B9BC3C6164B27F8003FA237 /* Default-568h@2x.png in Resources */,
+				3B9BC3CC164B27F8003FA237 /* ViewController_iPhone.xib in Resources */,
+				3B9BC3CF164B27F8003FA237 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B9BC3A7164B27F8003FA237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9BC3BC164B27F8003FA237 /* main.m in Sources */,
+				3B9BC3C0164B27F8003FA237 /* AppDelegate.m in Sources */,
+				3B9BC3C9164B27F8003FA237 /* ViewController.m in Sources */,
+				4B141F29458A4D0F39D47620 /* Route.m in Sources */,
+				4B1416C6AE00C0614304A29F /* Router.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B9BC3B8164B27F8003FA237 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B9BC3B9164B27F8003FA237 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3B9BC3CA164B27F8003FA237 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B9BC3CB164B27F8003FA237 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		3B9BC3CD164B27F8003FA237 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B9BC3CE164B27F8003FA237 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B9BC3D0164B27F8003FA237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B9BC3D1164B27F8003FA237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B9BC3D3164B27F8003FA237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomUrlSchemeRouter/CustomUrlSchemeRouter-Prefix.pch";
+				INFOPLIST_FILE = "CustomUrlSchemeRouter/CustomUrlSchemeRouter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3B9BC3D4164B27F8003FA237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomUrlSchemeRouter/CustomUrlSchemeRouter-Prefix.pch";
+				INFOPLIST_FILE = "CustomUrlSchemeRouter/CustomUrlSchemeRouter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B9BC3A5164B27F8003FA237 /* Build configuration list for PBXProject "CustomUrlSchemeRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9BC3D0164B27F8003FA237 /* Debug */,
+				3B9BC3D1164B27F8003FA237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B9BC3D2164B27F8003FA237 /* Build configuration list for PBXNativeTarget "CustomUrlSchemeRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9BC3D3164B27F8003FA237 /* Debug */,
+				3B9BC3D4164B27F8003FA237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B9BC3A2164B27F8003FA237 /* Project object */;
+}
